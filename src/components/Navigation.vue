@@ -54,7 +54,7 @@ p{
   color: white;
 }
 
-a:link, a:visited, li {
+a:link, a:visited {
     color: white;
     font-size: 1.1em;
     text-decoration: none;
