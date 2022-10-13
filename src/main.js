@@ -4,8 +4,11 @@ import VueRouter from 'vue-router'
 import CatalogueComponent from "./pages/Catalogue.vue"
 import ClientsComponent from "./pages/Clients.vue"
 import HistoriqueComponent from "./pages/Historique.vue"
+import Buefy from 'buefy'
+import 'buefy/dist/buefy.css'
 
 Vue.use(VueRouter)
+Vue.use(Buefy)
 
 Vue.config.productionTip = false
 

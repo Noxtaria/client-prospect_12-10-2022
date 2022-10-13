@@ -1,58 +1,64 @@
 <template>
-    <nav>
-      <ul>
-        <li>
-          <router-link :to="{name: 'catalogue'}">Mon catalogue</router-link>
-        </li>
-        <li>
-          <router-link :to="{name: 'clients'}">Mes clients / prospects</router-link>
-        </li>
-        <li>
-          <router-link :to="{name: 'historique'}">Mon historique</router-link>
-        </li>
-      </ul>
-    </nav>
-  </template>
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            <router-link :to="{name: 'catalogue'}">Mon Catalogue</router-link>
+          </a>
+
+          
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            <router-link :to="{name: 'clients'}">Mes clients / prospects</router-link>
+            
+          </a>
+
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            <router-link :to="{name: 'historique'}">Mon historique</router-link>
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="navbar-item">
+              <img src="./../assets/cart.png">
+              <p>Panier (0)</p>
+            </a>
+            <a class="navbar-item">
+              <img src="./../assets/logout.png" >
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</template>
+
   
-  <script>
-  export default {
-    name: 'NavigationComponent'
-  }
-  </script>
+<script>
+export default {
+  name: 'NavigationComponent'
+}
+</script>
   
-  <style scoped>
-  nav {
-    background-color: var(--dark);
-    height: 70px;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    width: 80%;
-    margin: auto;
-  }
-  
-  li {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  a:link, a:visited, li {
-    color: var(--main-lighter);
+<style scoped>
+p{
+  color: white;
+}
+
+a:link, a:visited, li {
+    color: white;
     font-size: 1.1em;
     text-decoration: none;
     font-family: var(--title-font);
   }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  </style>
+
+</style>
